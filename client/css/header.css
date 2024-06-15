@@ -5,6 +5,8 @@
   width: 100%;
   box-shadow: 0px 3.39px 5.64px 0px rgba(176, 190, 197, 0.32),0px 9.03px 27.09px 0px rgba(176, 190, 197, 0.32);
   background-color: var(--color-white);
+  position: fixed;
+  z-index: 1000;
 }
 
 .header__container {
@@ -12,6 +14,7 @@
   padding-bottom: 12px;
   max-width: 1355px;
   display: flex;
+  
 }
 
 .header__logo {
@@ -33,8 +36,8 @@
 }
 
 .header__input::placeholder {
-  color: var(--color-silver-chalice);
   font-size: 14px;
+  color: var(--color-silver-chalice);
 }
 
 .header__input:focus {
