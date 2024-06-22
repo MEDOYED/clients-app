@@ -9,7 +9,7 @@ export const createClientsHeader = () => {
   const inner = document.createElement('div');
 
   header.classList.add('header');
-  container.classList.add('container', 'header__container')
+  container.classList.add('container', 'header__container');
   logo.classList.add('logo', 'header__logo');
   logoImg.classList.add('logo__img', 'header__img');
   logoImg.src = 'img/logo.png';
@@ -18,12 +18,12 @@ export const createClientsHeader = () => {
   input.classList.add('header__input');
   wrapper.classList.add('header__wrapper');
   inner.classList.add('header__inner');
-  input.placeholder = 'Enter a query'
+  input.placeholder = 'Enter a query';
 
   header.append(container);
   logo.append(logoImg);
   form.append(input);
   container.append(logo, form);
-
+  
   return header;
-}
+};
