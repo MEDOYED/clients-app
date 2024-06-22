@@ -1,4 +1,4 @@
-import { svgContactDefault } from "./svg";
+import { svgContactDefault } from "./svg.js";
 
 export const createClientsForm = () => {
   const modalTitle = document.createElement('h2');

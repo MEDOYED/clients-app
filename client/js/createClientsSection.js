@@ -1,3 +1,4 @@
+import { addClientModal } from './addClient.js';
 import { svgAddUser } from './svg.js';
 
 export const createClientsSection = () => {
@@ -53,10 +54,14 @@ export const createClientsSection = () => {
   addUserBtn.textContent = 'Add a client';
   addUserBtnSvg.innerHTML = svgAddUser;
 
+  addUserBtn.addEventListener('click', () => {
+    document.body.append(addClientModal());
+  });
+
   main.append(section);
   section.append(container);
-  sortingDisplayName.append(sortingDisplaySpan);
-  // sortingDisplayName.appendChild(sortingDisplaySpan);
+  // sortingDisplayName.append(sortingDisplaySpan);
+  sortingDisplayName.appendChild(sortingDisplaySpan);
   sortingDisplayCreate.append(createSpan);
   sortingDisplayEdit.append(editSpan);
   theadTr.append(
